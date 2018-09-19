@@ -6,7 +6,7 @@ import (
 
 	"fmt"
 
-	facebook "github.com/madebyais/facebook-go-sdk"
+	facebook "facebook-go-sdk.wiki"
 )
 
 
