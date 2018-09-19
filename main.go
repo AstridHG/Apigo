@@ -29,7 +29,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
   fb.SetAccessToken(`EAAJl27dqpTwBAOGU3viZABtZBn2WtwsiAiXBreNskH5i6rIOZAPQFbZAOZBoti778bZB6H02m3a5bZBh6RV6trRrZCZBaZCznt9BDhrhZAQjvSN6BeEtjkt6Ccug6CI3ZCYVuqT6pMVTZALao0Ff7RY6RciZBZCbbfRjuAwFMWzdpsS9OFJNGc0HNJkfVkbd3AzwOZBZBJvoyxVry43VAjAZDZD`)
 
   // submit your feed
-	data, err := fb.API(`/me/feed`).Messages(`ADVERTENCIA: Se ha detectado un incendio en la casa`).Post()
+	data, err := fb.API(`/me/feed`).Messages(`ADVERTENCIA: Se ha detectado un incendio en la casa 1.1`).Post()
   if err != nil {
     panic(err)
   }
