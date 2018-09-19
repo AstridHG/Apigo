@@ -26,7 +26,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 
   // set your access token
   // NOTES: Please exchange with your access token
-  fb.SetAccessToken(`EAAJl27dqpTwBADgnF5IjmZCHkZC4tDXYV5VEZARS7cT8lnpGQfmaPAnsVa3PiyIOBDIXomuElO9h3TNv2Bc2grOuJnZB11oEZBBQWadRI8EejvHGMhT12gkQfBH5swi3QZCjJZBF9uTRIBoh5WR26YhQznO7EQIPr8ZD`)
+  fb.SetAccessToken(`EAAJl27dqpTwBAPDM6nIbC10fRaZAQi68EDhidyuiXoNdvtaCVGya0e5tKbDVpULz4SdNmKroYXA3m3gDad6zBBd43Rhuc4dsMtnfYwimos831ZBAdnckWifYDLqPt9M0XSJEjDqQX9kxtTZAlXAr6Oofc4m2bos6SArYY6qgfGqvp4tQhu2RY56ZCctBr6SI8fasGA8ZAMwZDZD`)
 
   // submit your feed
   data, err := fb.API(`/me/feed`).Messages(`Hola mundo desde Go Astrid 1202`).Post()
