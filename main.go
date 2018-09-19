@@ -26,10 +26,10 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 
   // set your access token
   // NOTES: Please exchange with your access token
-  fb.SetAccessToken(`EAAJl27dqpTwBAPDM6nIbC10fRaZAQi68EDhidyuiXoNdvtaCVGya0e5tKbDVpULz4SdNmKroYXA3m3gDad6zBBd43Rhuc4dsMtnfYwimos831ZBAdnckWifYDLqPt9M0XSJEjDqQX9kxtTZAlXAr6Oofc4m2bos6SArYY6qgfGqvp4tQhu2RY56ZCctBr6SI8fasGA8ZAMwZDZD`)
+  fb.SetAccessToken(`EAAJl27dqpTwBAOGU3viZABtZBn2WtwsiAiXBreNskH5i6rIOZAPQFbZAOZBoti778bZB6H02m3a5bZBh6RV6trRrZCZBaZCznt9BDhrhZAQjvSN6BeEtjkt6Ccug6CI3ZCYVuqT6pMVTZALao0Ff7RY6RciZBZCbbfRjuAwFMWzdpsS9OFJNGc0HNJkfVkbd3AzwOZBZBJvoyxVry43VAjAZDZD`)
 
   // submit your feed
-  data, err := fb.API(`/me/feed`).Messages(`Hola mundo desde Go Astrid 1202`).Post()
+	data, err := fb.API(`/me/feed`).Messages(`ADVERTENCIA: Se ha detectado un incendio en la casa`).Post()
   if err != nil {
     panic(err)
   }
